@@ -30,8 +30,8 @@ a {
 
 #grid_main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 5px;
   text-decoration: none;
 }
 
@@ -45,6 +45,7 @@ a {
   padding-bottom: 10px;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 #index_tut h2,
@@ -58,4 +59,15 @@ a {
 
 #index_rec {
   background-image: url("https://images.unsplash.com/flagged/photo-1558937305-efe8474d0244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=60");
+}
+
+/* mobile users */
+@media screen and (max-width: 480px) {
+  html {
+    margin: 0 4%;
+  }
+
+  #grid_main {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 }
