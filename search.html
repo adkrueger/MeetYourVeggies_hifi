@@ -16,5 +16,40 @@
         $("#navbar").load("navbar.html");
       });
     </script>
+
+    <h2 class="header">Search For Alternatives</h2>
+    <hr />
+    <h4 class="header">Instructions</h4>
+    <div id="search_grid">
+      <div id="search_blurb1">
+        <span
+          >This tool is best used by those who want an alternative for a
+          specific food. For example, if you want to look up an alternative to
+          chicken, try typing in the word "chicken" on the right to find
+          alternatives</span
+        >
+      </div>
+      <div id="search_blurb2">
+        <span
+          >After clicking the "Search" button, look below to see all of the
+          plant-based alternatives that exist for this food. Many of these
+          alternatives are individual products, but some can be ingredients as
+          well.</span
+        >
+      </div>
+      <div id="search_box">
+        <input id="search_bar" type="text" name="search_bar" />
+        <button id="search_button">Search!</button>
+      </div>
+      <br />
+    </div>
+
+    <div id="search_results">
+      <h3 class="header">Search Results</h3>
+      <hr />
+      <ul id="results">
+        <!-- the resulting alternatives from the search -->
+      </ul>
+    </div>
   </body>
 </html>
