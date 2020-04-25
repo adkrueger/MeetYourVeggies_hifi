@@ -16,5 +16,31 @@
         $("#navbar").load("navbar.html");
       });
     </script>
+
+    <h2 class="header">Enter Ingredients Below</h2>
+    <hr />
+    <span
+      >Copy paste or type in your shopping list or ingredients from a recipe
+      into the box on the left, then click Submit and look at the alternatives
+      to the right!</span
+    >
+    <div id="list_grid">
+      <div id="list_input">
+        <label>List Input</label>
+        <br />
+        <textarea id="input" rows="30" cols="50"></textarea>
+        <br />
+        <button>Submit</button>
+      </div>
+
+      <div id="list_output">
+        <label>List Output</label>
+        <ol id="output">
+          <!-- will use JS to add output here once users can actually type stuff in and hit Submit -->
+        </ol>
+        <br />
+        <button>Shuffle</button><button>Change Selected Item</button>
+      </div>
+    </div>
   </body>
 </html>
