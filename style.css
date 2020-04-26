@@ -150,7 +150,8 @@ a {
 }
 
 #about_img img,
-#rec_grid1 img {
+#rec_grid1 img,
+.main_pic img {
   border: 2px solid #000b1d;
   border-radius: 5px;
 }
