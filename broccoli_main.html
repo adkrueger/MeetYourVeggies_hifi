@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Meet Your Veggies!</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <script>
+      // use JQuery to load the navigation bar without having to copy all the HTML
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+    </script>
+
+    <div class="tut_main_grid">
+      <div class="main_pic">
+        <img src="imgs/tofuStirFry.jpg" alt="tofu stir fry" width="400" />
+      </div>
+      <div class="start_button">
+        <a href="tofu1.html">Start!</a>
+      </div>
+    </div>
+
+    <br /><br />
+    <hr />
+    <div class="tut_main_blurb">
+      <h4 class="header">What broccoli should I choose?</h4>
+      <p>
+        The best kind of broccoli is found in whole heads for freshness, but you
+        can also buy it in individual florets (which can be frozen).
+      </p>
+      <p>
+        When choosing a head of broccoli, make sure the head is a bright green
+        with compact clusters.
+      </p>
+      <p>
+        Also, the stems/stalks should not be woody and should be a light green
+        color.
+      </p>
+    </div>
+  </body>
+</html>
