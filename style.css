@@ -117,6 +117,22 @@ a {
   transition: 0.4s;
 }
 
+#search_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 25px;
+  align-items: center;
+  justify-items: center;
+}
+
+#search_box {
+  text-align: center;
+}
+
+#search_bar {
+  width: 100%;
+}
+
 /* mobile users */
 @media screen and (max-width: 480px) {
   html {
