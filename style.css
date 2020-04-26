@@ -17,7 +17,9 @@ html {
 p,
 span,
 label,
-button {
+button,
+li,
+a {
   font-family: "Open Sans", sans-serif;
   color: #000b1d;
 }
@@ -100,7 +102,8 @@ a {
 }
 
 #rec_grid2 a,
-#rec_grid3 a {
+#rec_grid3 a,
+.start_button a {
   display: grid;
   height: 100%;
   width: 50%;
@@ -115,7 +118,8 @@ a {
 }
 
 #rec_grid2 a:hover,
-#rec_grid3 a:hover {
+#rec_grid3 a:hover,
+.start_button a:hover {
   background-color: #733706;
   transition: 0.4s;
 }
@@ -144,10 +148,6 @@ a {
   grid-gap: 30px;
 }
 
-#about_end_blurb li {
-  font-family: "Open Sans", sans-serif;
-}
-
 #list_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -163,6 +163,24 @@ a {
 #list_input label,
 #list_output label {
   font-weight: bolder;
+}
+
+.tut_main_grid {
+  display: flex;
+  align-items: center;
+}
+
+.main_pic {
+  display: flex;
+  flex: 2 2 20em;
+  justify-content: center;
+}
+
+.start_button {
+  display: flex;
+  flex: 1 1 10em;
+  height: 40px;
+  justify-content: center;
 }
 
 /* mobile users */
@@ -209,5 +227,20 @@ a {
   #list_grid {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .tut_main_grid {
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .main_pic {
+    width: 320px;
+  }
+
+  .start_button {
+    flex-basis: 40px;
+    width: 150px;
+    justify-content: center;
   }
 }
