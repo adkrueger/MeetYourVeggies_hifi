@@ -133,6 +133,18 @@ a {
   width: 100%;
 }
 
+#about_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 30px;
+}
+
+#about_end_blurb li {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* mobile users */
 @media screen and (max-width: 480px) {
   html {
@@ -159,5 +171,14 @@ a {
   #rec_grid3,
   .rec_header {
     text-align: center;
+  }
+
+  #about_grid {
+    grid-template-columns: none;
+    justify-content: center;
+  }
+
+  #about_blurb {
+    width: 90%;
   }
 }
