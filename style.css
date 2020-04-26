@@ -62,7 +62,7 @@ a {
 .tut_grid_list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 5px;
+  grid-gap: 25px;
   text-decoration: none;
 }
 
@@ -79,6 +79,7 @@ a {
   font-family: "Open Sans", sans-serif;
   color: #000b1d;
   font-weight: bolder;
+  margin-top: 5px;
 }
 
 #rec_grid1,
@@ -153,6 +154,10 @@ a {
 
   #grid_main {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .tut_grid_list {
+    grid-gap: 25px;
   }
 
   #rec_grid1,
