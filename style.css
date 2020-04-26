@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;700&display=swap");
 html {
   background-color: #fefff5;
   margin: 0 10%;
@@ -18,7 +17,6 @@ html {
 p,
 span {
   font-family: "Open Sans", sans-serif;
-  /*font-weight: lighter;*/
   color: #000b1d;
 }
 
@@ -59,6 +57,28 @@ a {
 
 #index_rec {
   background-image: url("https://images.unsplash.com/flagged/photo-1558937305-efe8474d0244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=60");
+}
+
+.tut_grid_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 5px;
+  text-decoration: none;
+}
+
+.box {
+  text-align: center;
+  color: #000b1d;
+}
+
+.box img {
+  border: 4px solid #000b1d;
+}
+
+.box h5 {
+  font-family: "Open Sans", sans-serif;
+  color: #000b1d;
+  font-weight: bolder;
 }
 
 /* mobile users */
