@@ -15,7 +15,9 @@ html {
 }
 
 p,
-span {
+span,
+label,
+button {
   font-family: "Open Sans", sans-serif;
   color: #000b1d;
 }
@@ -146,6 +148,23 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
+#list_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+#list_grid textarea {
+  width: 100%;
+}
+
+#list_input label,
+#list_output label {
+  font-weight: bolder;
+}
+
 /* mobile users */
 @media screen and (max-width: 480px) {
   html {
@@ -185,5 +204,10 @@ a {
 
   #about_blurb {
     width: 90%;
+  }
+
+  #list_grid {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
   }
 }
