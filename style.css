@@ -139,6 +139,9 @@ a {
 
 #search_bar {
   width: 100%;
+  height: 28px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
 #about_grid {
@@ -166,7 +169,7 @@ a {
 }
 
 .steps {
-  padding: 10px;
+  padding: 20px 15px;
   border: 2px ridge #000b1d;
   border-radius: 5px;
 }
@@ -181,10 +184,11 @@ a {
   justify-content: space-between;
 }
 
-.button_container button {
+.button_container button,
+#search_button {
   width: 100px;
   height: 30px;
-  border: 2px solid #000b1d;
+  border: 1px solid #000b1d;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -228,6 +232,10 @@ li a {
   text-decoration: underline;
 }
 
+.button_container /* TODO remove me when hifi phase over */ {
+  visibility: hidden;
+}
+
 /* mobile users */
 @media screen and (max-width: 480px) {
   html {
@@ -254,6 +262,10 @@ li a {
   #rec_grid3,
   .rec_header {
     text-align: center;
+  }
+
+  #rec_grid1 img {
+    width: 320px;
   }
 
   #about_grid {
@@ -283,8 +295,9 @@ li a {
     align-content: space-between;
   }
 
-  .main_pic {
+  .main_pic img {
     width: 320px;
+    margin-bottom: 20px;
   }
 
   .start_button {

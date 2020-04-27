@@ -39,9 +39,12 @@
         >
       </div>
       <div id="search_box">
-        <input id="search_bar" type="text" name="search_bar" />
+        <input id="search_bar" type="text" name="search_bar" value="chicken" />
         <br /><br />
-        <button id="search_button">Search!</button>
+        <!-- TODO change link below to JS functionality after hifi phase -->
+        <button id="search_button">
+          <a href="postsearch.html">Search!</a>
+        </button>
         <br />
         <a id="cancel_search_button" hidden="true">Cancel</a>
       </div>
@@ -52,6 +55,7 @@
       <h3 class="header">Search Results</h3>
       <hr />
       <ul id="results">
+        <p>Empty - search with a keyword above</p>
         <!-- the resulting alternatives from the search -->
       </ul>
     </div>
