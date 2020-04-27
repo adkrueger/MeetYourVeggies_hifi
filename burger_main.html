@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Meet Your Veggies!</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <script>
+      // use JQuery to load the navigation bar without having to copy all the HTML
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+    </script>
+
+    <div class="tut_main_grid">
+      <div class="main_pic">
+        <img
+          src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=60"
+          alt="burger"
+          width="400"
+        />
+      </div>
+      <div class="start_button">
+        <a href="burger_steps.html">Start!</a>
+      </div>
+    </div>
+
+    <br /><br />
+    <hr />
+    <div class="tut_main_blurb">
+      <h4 class="header">What is an Impossible Burger?</h4>
+      <p>
+        Impossible Burgers are made out of "Impossible Meat", a plant-based
+        product that is meant to simulate meat as closely as possible.
+      </p>
+      <p>
+        The impossible meat is meant to look like meat, cook like meat, and
+        (arguably) most importantly, taste like meat. So, if you're
+        transitioning to the vegan lifestyle and craving that juicy burger, look
+        no further than this tutorial!
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Meet Your Veggies!</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <script>
+      // use JQuery to load the navigation bar without having to copy all the HTML
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+    </script>
+
+    <div class="step_container1">
+      <h2 class="header" style="text-align: center;">Step #1</h2>
+      <hr />
+      <br /><br />
+      <div class="steps_grid">
+        <div class="steps">
+          <ol>
+            <li>
+              Prepare the oven by preheating it to 425F. This is usually done
+              with the "Bake" setting.
+            </li>
+            <li>
+              Chop the cauliflower into florets of the size seen in the picture.
+              It's ok if some are smaller than others. The best way to do this
+              is by cutting off the large, leafy stem and then cutting up into
+              the head of the cauliflower to remove most of the stalks.
+            </li>
+            <li>
+              Once you have your florets, place them in a medium-sized mixing
+              bowl. Drizzle the olive oil over the top, and then use your hands
+              to mix the florets around so they all get covered in olive oil.
+              This should leave the florets with a light sheen of olive oil.
+            </li>
+            <li>
+              Now, spray a baking sheet lined with tin-foil with cooking spray
+              (like PAM), and dump the bowl of florets onto the pan. Then, salt
+              and pepper the florets as you see fit and place them in the oven
+              for about 25 minutes.
+            </li>
+            <li>
+              Check the florets about 5 minutes before they should be done to
+              make sure they aren't burnt. After the time is up, take the
+              florets out and try one (after it cools down a bit) to see if they
+              are cooked through. They should be somewhat firm but not mushy.
+            </li>
+          </ol>
+        </div>
+
+        <div class="steps_media">
+          <img src="imgs/caulifloweroven.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="step_container2">
+      <h2 class="header" style="text-align: center;">All Done!</h2>
+      <hr />
+      <br /><br />
+      <div class="steps_grid">
+        <div class="steps_media">
+          <img src="imgs/cauliflowerplate.jpg" />
+        </div>
+
+        <div class="steps">
+          <p>Great Job! Now you know how to roast cauliflower.</p>
+          <p>
+            Cauliflower is high in fiber and several vitamins, such as vitamin
+            C, K, anf folate. It is also fairly low in calories, at around 40 in
+            a cup of cooked cauliflower.
+          </p>
+        </div>
+
+        <div class="recipes_list">
+          <p>Here are some recipes with cauliflower you might enjoy.</p>
+          <ul>
+            <li>
+              <a
+                href="https://www.delish.com/cooking/recipe-ideas/recipes/a52647/whole-roasted-cauliflower-tomatoes-and-garlic-recipe/"
+                >Whole Roasted Cauliflower, Tomatoes and Garlic</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.yummly.com/recipe/Cauliflower-Steaks-with-Rosemary-Roasted-Grape-Chutney-_AIP_-Paleo_-Vegan_-2703260?prm-v1"
+                >Cauliflower Steaks with Rosemary Roasted Grape Chutney</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.yummly.com/recipe/Cauliflower-Patties-2666058?prm-v1"
+              >
+                Cauliflower Patties
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="button_container">
+      <div class="prev_btn">
+        <button>Previous</button>
+      </div>
+
+      <div class="next_btn">
+        <button>Next</button>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>
