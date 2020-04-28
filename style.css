@@ -185,7 +185,8 @@ a {
 }
 
 .button_container button,
-#search_button {
+#search_button,
+#list_grid button {
   width: 100px;
   height: 30px;
   border: 1px solid #000b1d;
@@ -234,6 +235,11 @@ li a {
 
 .button_container /* TODO remove me when hifi phase over */ {
   visibility: hidden;
+}
+
+#cancel_search_button {
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 /* mobile users */
