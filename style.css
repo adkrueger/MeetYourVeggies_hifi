@@ -242,6 +242,16 @@ li a {
   text-decoration: underline;
 }
 
+#list_input {
+  width: 300px;
+  height: 555.6px;
+}
+
+#list_output {
+  width: 300px;
+  height: 555.6px;
+}
+
 /* mobile users */
 @media screen and (max-width: 480px) {
   html {
@@ -294,6 +304,7 @@ li a {
   #list_grid {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
   }
 
   .tut_main_grid {
