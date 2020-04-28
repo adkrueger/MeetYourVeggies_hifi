@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="script.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -29,28 +30,45 @@
       into the box on the left, then click Submit and check out the alternatives
       to the right!</span
     >
-    <br /><br /><br /><br />
+    <br />
+    <span
+      >Note: Items should be separated by a "new line", or by hitting "Enter" on
+      your keyboard.</span
+    >
+    <br /><br /><br />
     <div id="list_grid">
       <div id="list_input">
         <label>List Input</label>
         <br /><br />
-        <textarea id="input" rows="30" cols="50">
-Sausage &#10;Broccoli &#10;Cauliflower &#10;Carrots &#10;Hummus &#10;Shredded cheese &#10;Lentils &#10;Can black beans &#10;Chicken broth &#10;Rice pilaf &#10;Bananas &#10;Milk &#10;
-        </textarea>
+        <textarea id="input" rows="30" cols="50"></textarea>
         <br /><br />
-        <a href="rec_list_altered.html"><button>Submit</button></a>
+        <button onclick="setupOutput(document.getElementById('input').value)">
+          Submit
+        </button>
       </div>
 
       <div id="list_output">
-        <label hidden>List Output</label>
+        <label id="output_title" style="display: none;">List Output</label>
         <br /><br />
         <div id="output">
           <!-- will use JS to add output here once users can actually type stuff in and hit Submit -->
         </div>
         <br />
-        <button hidden>Shuffle</button>
+        <button
+          id="shuffle_btn"
+          onclick="shuffleOutput()"
+          style="display: none;"
+        >
+          Shuffle
+        </button>
         <br /><br />
-        <button hidden>Change Selected Item(s)</button>
+        <button
+          id="change_btn"
+          onclick="changeOutput()"
+          style="display: none; width: 200px;"
+        >
+          Change Selected Item(s)
+        </button>
       </div>
     </div>
     <br /><br />
