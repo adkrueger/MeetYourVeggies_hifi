@@ -1,7 +1,7 @@
 <div id="navbar">
   <div id="main_header">
     <a href="index.html">
-      <h1 style="font-family: 'Fredoka One', sans-serif; color: #005c02;">
+      <h1>
         Meet Your Veggies!
       </h1>
     </a>
@@ -13,5 +13,19 @@
     <span> <a href="search.html">Search</a>&emsp;&emsp; </span>
     <span> <a href="about.html">About</a></span>
   </div>
+  <a href="javascript:void(0);" id="icon" onclick="dropDown()">
+    <i class="fa fa-bars"></i>
+  </a>
   <br />
 </div>
+
+<script>
+  function dropDown() {
+    let links = document.getElementById("links");
+    if (links.style.display === "block") {
+      links.style.display = "none";
+    } else {
+      links.style.display = "block";
+    }
+  }
+</script>
