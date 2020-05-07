@@ -11,22 +11,38 @@ const alts = {
     "Seitan",
     "TVP (Textured Vegetable Protein)",
   ],
+  beef: [
+    "Impossible Meat",
+    "Beyond Meat",
+    "Seitan",
+    "TVP (Textured Vegetable Protein)",
+  ],
   pork: ["Jackfruit", "Oumph! Pieces", "Oumph! Chef Style", "Tempeh"],
-};
-
-const backwardsAlts = {
-  "Quorn Chick'n Patties": "chicken",
-  "Gardein Chick'n Tenders": "chicken",
-  Tofu: "chicken",
-  "Beans or Lentils": "chicken",
-  "Impossible Meat": "steak",
-  "Beyond Meat": "steak",
-  Seitan: "steak",
-  "TVP (Textured Vegetable Protein)": "steak",
-  Jackfruit: "pork",
-  "Oumph! Pieces": "pork",
-  "Oumph! Chef Style": "pork",
-  Tempeh: "pork",
+  milk: ["almond milk", "soy milk", "rice milk", "cashew milk"],
+  yogurt: [
+    "So Delicious Coconut Milk Yogurt",
+    "Stonyfield Osoy Yogurt",
+    "Silk Almond Milk Yogurt",
+    "daiya Dairy and Soy Free Greek Yogurt",
+  ],
+  egg: [
+    "Follow Your Heart VeganEgg",
+    "Orgran Vegan Easy Egg",
+    "Firm Tofu (for scrambling)",
+  ],
+  eggs: [
+    "Follow Your Heart VeganEgg",
+    "Orgran Vegan Easy Egg",
+    "Firm Tofu (for scrambling)",
+  ],
+  "ice cream": [
+    "So Delicious Ice Cream",
+    "sorbet",
+    "Ben & Jerrys Non-Dairy Pints",
+    "Daiya Chocolate Fudge Crunch dessert bars",
+    "Tofutti Premium Pints",
+    "Haagen-Dazs Non-Dairy Ice Cream",
+  ],
 };
 
 let itemMap = [];
@@ -36,7 +52,7 @@ let itemMap = [];
  * keyword, or null if the keyword is not in the list
  */
 function getRandomAlt(keyword) {
-  keyword = keyword.toLowerCase();
+  keyword = keyword.toLowerCase().trim();
 
   let contained = false;
   Object.keys(alts).forEach((key) => {
@@ -56,7 +72,7 @@ function getRandomAlt(keyword) {
  * returns the list associated with a keyword
  */
 function searchAlts(keyword) {
-  keyword = keyword.toLowerCase();
+  keyword = keyword.toLowerCase().trim();
 
   let contained = false;
   Object.keys(alts).forEach((key) => {
