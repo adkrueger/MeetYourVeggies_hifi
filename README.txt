@@ -1,3 +1,14 @@
+Project: Meet Your Veggies
+Author: Aaron Krueger
+
+Meet Your Veggies aims to provide an interface for users of any age group transitioning to a 
+plant-based diet to learn how to achieve said transition.
+Many current applications provide an interface on reasons why one should go vegan, but not how, 
+which Meet Your Veggies plans to address. Meet Your Veggies provides tutorials for recipes, a tool to alter a grocery list containing 
+animal products, and a search tool that allows users to learn about alternatives directly.
+
+
+
 This project consists of HTML, CSS, and JavaScript. You shouldn't 
 have to download anything to run the program, assuming you can access
 the github pages page for this project. All CSS and JS is linked within
